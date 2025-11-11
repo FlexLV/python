@@ -10,5 +10,5 @@ class Address:
         print("Last Name:", self.lname)
         print("Email:", self.email)
 
-a1 = Address("Ernests", "Dejus", "ernests@gmail.com")
-a1.display()
+a = Address("Ernests", "Dejus", "ernests@gmail.com")
+a.display()

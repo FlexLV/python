@@ -8,5 +8,5 @@ class Person:
         print("Name:", self.name)
         print("Age:", self.age)
 
-p = Person("Ernests", 20)
-p.display()
+a = Person("Ernests", 20)
+a.display()

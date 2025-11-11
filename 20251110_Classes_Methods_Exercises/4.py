@@ -21,8 +21,8 @@ class Employee(Person):
 
 
 
-e1 = Employee("Ernests", 20, "DevOps Engineer")
+a = Employee("Ernests", 20, "DevOps Engineer")
 
 
-e1.display()
+a.display()
 

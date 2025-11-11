@@ -3,5 +3,5 @@ class Person:
     def greet(self):
         print("Hello!")
 
-p = Person()
-p.greet()
+a = Person()
+a.greet()
