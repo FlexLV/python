@@ -15,8 +15,8 @@ class AddressBook:
         return "Address not found."
 
 book = AddressBook()
-book.add_address("Alice", "123 Main Street, Berlin")
-book.add_address("Bob", "42 Park Avenue, Munich")
+book.add_address("Ernests", "Mettern Strase, Deggendorf")
+book.add_address("Aleksis", "Dieter-Görlitz-Platz, Deggendorf")
 
-print(book.find_address("Alice"))
-print(book.find_address("Charlie"))
+print(book.find_address("Ernests"))
+print(book.find_address("Aleksis"))
