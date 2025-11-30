@@ -1,7 +1,7 @@
 import tkinter as tk
 
-
 class Spaceship:
+
     def __init__(self, canvas, x, y, width=50, height=20, color="blue", speed=15):
         self.canvas = canvas
         self.speed = speed
@@ -34,7 +34,6 @@ class Spaceship:
     def get_coords(self):
         return self.canvas.coords(self.id)
 
-
 class Defender(Spaceship):
     def move_left(self, event=None):
         self.move(-self.speed, 0)
@@ -46,7 +45,6 @@ class Defender(Spaceship):
         x1, y1, x2, y2 = self.get_coords()
         mid_x = (x1 + x2) / 2
         return Bullet(self.canvas, mid_x, y1)
-
 
 class Bullet:
     def __init__(self, canvas, x, y, speed=-10):
@@ -64,7 +62,6 @@ class Bullet:
 
     def destroy(self):
         self.canvas.delete(self.id)
-
 
 class GameApp:
     def __init__(self):
@@ -221,7 +218,6 @@ class GameApp:
 
     def run(self):
         self.root.mainloop()
-
 
 if __name__ == "__main__":
     GameApp().run()
